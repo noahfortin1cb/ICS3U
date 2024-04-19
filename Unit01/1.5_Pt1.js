@@ -38,8 +38,11 @@ while (x == true){
         console.log("Great job knowing the length of your name.");
         x = false
     }
-    else{
-        console.log("Bad guess, try again.");
-}
+    else if (lenUser > name + 1){
+        console.log("Too high! ");
+    }
+    else if (lenUser < name + 1){
+        console.log("Too low! ");
+    }
 }
 //Gets the input for how long the user thinks their name is, then if they get it wrong it makes them try again, and if they get it right they can leave.
