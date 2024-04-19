@@ -1,5 +1,4 @@
 //1.5 Part 1:
-require('../utils/utils.js')
 const prompt = require('sync-prompt')();
 
 let age = prompt("How old are you? ");
@@ -11,12 +10,15 @@ if (ageInt >= 50) {
 else if (ageInt < 16) {
     console.log("Under 16? Can't drive yet.");
 }
+else if (ageInt == 40){
+    console.log("You're getting pretty old. ")
+}
 else {
     console.log("Middle aged.");
 }
 
 let user_name = prompt("What is your name??? ");
-let lenUser = len(user_name);
+let lenUser = user_name.length();
 
 if (user_name == "Mr.J"){
     console.log("🐠");
