@@ -21,10 +21,10 @@ else {
 }
 // Goes through a bunch of conditions and prints out the fitting answer.
 let user_name = prompt("What is your name??? ");
-let lenUser = user_name.length - 1;
+let lenUser = user_name.length;
 // Gets the username of the user and checks it's length then stores it in a variable.
 if (user_name == "Mr.J"){
-    console.log("🐠");
+    console.log(lenUser);
 }
 else if (lenUser > 6){
     console.log("You have a long name.");
@@ -34,14 +34,16 @@ else if (lenUser > 6){
 x = true
 while (x == true){
     let name = prompt("How long is your name? ");
-    if (lenUser == name + 1){
+    name = parseInt(name)
+    console.log(lenUser)
+    if (lenUser == name){
         console.log("Great job knowing the length of your name.");
         x = false
     }
-    else if (lenUser > name + 1){
+    else if (name > lenUser){
         console.log("Too high! ");
     }
-    else if (lenUser < name + 1){
+    else if (name < lenUser){
         console.log("Too low! ");
     }
 }
