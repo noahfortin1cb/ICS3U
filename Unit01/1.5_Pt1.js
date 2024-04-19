@@ -3,7 +3,7 @@ const prompt = require('prompt-sync')();
 
 let age = prompt("How old are you? ");
 let ageInt = parseInt(age)
-// Takes a variable for the age then parseints it
+// Takes a variable for the age and parseints it
 if (ageInt >= 50) {
     console.log("You're " + age + " years old!? You definitely qualify for the senior discount.");
 }
