@@ -21,3 +21,9 @@ function evNineIble(value){
         return false;
     }
 }
+evNineIble(54)
+evNineIble(81)
+
+function area_circle(r){
+    
+}
