@@ -34,7 +34,7 @@ else{
 //Part 3, extra thing
 
 let word = prompt("What's the longest word you know?  ")
-let wordlen = word.length()
+let wordlen = word.length
 
 if (wordlen <= 8){
     console.log("You are dumb");
