@@ -12,3 +12,5 @@ function scorpe(x){
 
 scope()
 scorpe(5)
+
+// tringleeeeeeet
